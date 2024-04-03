@@ -2,7 +2,6 @@ package com.room.service;
 
 import com.room.model.DTO.RoomDTO;
 import com.room.model.DTO.RoomResponse;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
