@@ -24,6 +24,12 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>com.commons.room</groupId>
+            <artifactId>commons-service-room</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <!--		<dependency>-->
         <!--			<groupId>org.springframework.cloud</groupId>-->
         <!--			<artifactId>spring-cloud-starter-config</artifactId>-->
