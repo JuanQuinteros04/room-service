@@ -1,10 +1,10 @@
 package com.room.service;
 
 import com.room.exceptions.NotFoundException;
-import com.room.model.DTO.RoomDTO;
-import com.room.model.DTO.RoomResponse;
-import com.room.model.Room;
-import com.room.model.mapper.RoomMapper;
+import com.commons.room.model.DTO.RoomDTO;
+import com.commons.room.model.DTO.RoomResponse;
+import com.commons.room.model.Room;
+import com.commons.room.model.mapper.RoomMapper;
 import com.room.persistence.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,6 +31,11 @@ public class RoomServiceImpl implements RoomService{
     }
 
     @Override
+    public RoomResponse findByRoomNumber(Long roomNumber) {
+        return roomMapper.roomToRoomResponse(roomRepository.findByRoomNumber(roomNumber));
+    }
+
+    @Override
     public RoomResponse createRoom(RoomDTO roomDTO) {
 
         Room room = roomMapper.roomDTOToRoom(roomDTO);
@@ -47,7 +52,7 @@ public class RoomServiceImpl implements RoomService{
         room.setTypeRoom(roomDTO.getTypeRoom() != null ? roomDTO.getTypeRoom() : room.getTypeRoom());
         room.setRoomCapacity(roomDTO.getRoomCapacity() != null ? roomDTO.getRoomCapacity() : room.getRoomCapacity());
         room.setAvailableRoom(roomDTO.getAvailableRoom() != null ? roomDTO.getAvailableRoom() : room.getAvailableRoom());
-        room.setPrice(roomDTO.getPrice() != null ? roomDTO.getPrice() : room.getPrice());
+        room.setPricePerNight(roomDTO.getPricePerNight() != null ? roomDTO.getPricePerNight() : room.getPricePerNight());
 
         roomRepository.save(room);
     }

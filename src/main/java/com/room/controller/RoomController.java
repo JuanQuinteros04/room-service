@@ -1,7 +1,7 @@
 package com.room.controller;
 
-import com.room.model.DTO.RoomDTO;
-import com.room.model.DTO.RoomResponse;
+import com.commons.room.model.DTO.RoomDTO;
+import com.commons.room.model.DTO.RoomResponse;
 import com.room.service.RoomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -26,6 +26,11 @@ public class RoomController {
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<RoomResponse>findRoomById(@PathVariable("id")Long id){
         return ResponseEntity.ok(roomService.findRoomById(id));
+    }
+
+    @GetMapping(value = "/room/{roomNumber}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<RoomResponse>findByRoomNumber(@PathVariable("roomNumber")Long roomNumber){
+        return ResponseEntity.ok(roomService.findByRoomNumber(roomNumber));
     }
 
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
