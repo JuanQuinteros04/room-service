@@ -1,7 +1,7 @@
 package com.room.service;
 
-import com.commons.room.model.DTO.RoomDTO;
-import com.commons.room.model.DTO.RoomResponse;
+import com.room.dto.RoomDTO;
+import com.room.dto.responses.RoomResponse;
 
 import java.util.List;
 

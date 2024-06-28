@@ -1,7 +1,7 @@
 package com.room.controller;
 
-import com.commons.room.model.DTO.RoomDTO;
-import com.commons.room.model.DTO.RoomResponse;
+import com.room.dto.RoomDTO;
+import com.room.dto.responses.RoomResponse;
 import com.room.service.RoomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -13,7 +13,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping("/rooms")
+@RequestMapping("/service")
 public class RoomController {
     @Autowired
     RoomService roomService;

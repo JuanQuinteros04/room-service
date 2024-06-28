@@ -1,10 +1,10 @@
 package com.room.service;
 
 import com.room.exceptions.NotFoundException;
-import com.commons.room.model.DTO.RoomDTO;
-import com.commons.room.model.DTO.RoomResponse;
-import com.commons.room.model.Room;
-import com.commons.room.model.mapper.RoomMapper;
+import com.room.dto.RoomDTO;
+import com.room.dto.mapper.RoomMapper;
+import com.room.dto.responses.RoomResponse;
+import com.room.model.Room;
 import com.room.persistence.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

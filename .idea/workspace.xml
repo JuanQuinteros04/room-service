@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="691c52ad-1cc9-44a0-9077-3678f9e2b247" name="Changes" comment="Using the Commons dependency.">
+    <list default="true" id="691c52ad-1cc9-44a0-9077-3678f9e2b247" name="Changes" comment="Implementing the commons service.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/room/RoomServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/room/RoomServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/room/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/room/controller/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/room/model/DTO/RoomDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/room/model/DTO/RoomResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/room/model/Room.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/room/model/mapper/RoomMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/room/persistence/RoomRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/room/persistence/RoomRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/room/service/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/room/service/RoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/room/service/RoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/room/service/RoomServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,13 +88,40 @@
       <option name="project" value="LOCAL" />
       <updated>1712187105519</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Classes present in commons eliminated.">
+      <option name="closed" value="true" />
+      <created>1712788116816</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712788116817</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added commons dependencies..">
+      <option name="closed" value="true" />
+      <created>1712788160938</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712788160938</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implementing the commons service.">
+      <option name="closed" value="true" />
+      <created>1712788202607</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712788202607</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Adding missing files to the project regarding Maven." />
     <MESSAGE value="Using the Commons dependency." />
-    <option name="LAST_COMMIT_MESSAGE" value="Using the Commons dependency." />
+    <MESSAGE value="Classes present in commons eliminated." />
+    <MESSAGE value="Added commons dependencies.." />
+    <MESSAGE value="Implementing the commons service." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing the commons service." />
   </component>
 </project>

@@ -1,6 +1,6 @@
 package com.room.persistence;
 
-import com.commons.room.model.Room;
+import com.room.model.Room;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
