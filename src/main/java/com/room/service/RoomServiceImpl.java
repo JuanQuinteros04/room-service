@@ -49,7 +49,7 @@ public class RoomServiceImpl implements RoomService{
         Room room = roomRepository.findById(id).orElseThrow(NotFoundException::new);
 
         room.setRoomNumber(roomDTO.getRoomNumber() != null ? roomDTO.getRoomNumber() : room.getRoomNumber());
-        room.setTypeRoom(roomDTO.getTypeRoom() != null ? roomDTO.getTypeRoom() : room.getTypeRoom());
+//        room.setTypeRoom(roomDTO.getTypeRoom() != null ? roomDTO.getTypeRoom() : room.getTypeRoom());
         room.setRoomCapacity(roomDTO.getRoomCapacity() != null ? roomDTO.getRoomCapacity() : room.getRoomCapacity());
         room.setAvailableRoom(roomDTO.getAvailableRoom() != null ? roomDTO.getAvailableRoom() : room.getAvailableRoom());
         room.setPricePerNight(roomDTO.getPricePerNight() != null ? roomDTO.getPricePerNight() : room.getPricePerNight());
